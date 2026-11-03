@@ -1,0 +1,731 @@
+{
+  "category_aliases": {
+    "general": "desconocido",
+    "desconocido": "desconocido",
+    "estado_emocional": "malestar",
+    "respuesta_corta": "respuesta_corta",
+    "pedir_mas_informacion": "pedir_mas_informacion",
+    "pregunta_por_que": "pregunta_por_que",
+    "sintoma_fisico_followup": "sintoma_fisico",
+    "ambivalencia_followup": "ambivalencia_followup",
+    "multitema_ambivalencia_ansiedad": "ambivalencia_embarazo",
+    "multitema_ambivalencia_sintoma_ansiedad": "multitema_ambivalencia_sintoma_ansiedad",
+    "multitema_sintoma_ansiedad": "multitema_sintoma_ansiedad",
+    "multitema_tristeza_ansiedad": "multitema_tristeza_ansiedad"
+  },
+  "risk_categories": {
+    "riesgo_alto": "alto",
+    "riesgo_medio": "medio",
+    "sintoma_fisico": "medio",
+    "ambivalencia_embarazo": "medio",
+    "ambivalencia_followup": "medio",
+    "multitema_ambivalencia_sintoma_ansiedad": "medio",
+    "multitema_sintoma_ansiedad": "medio"
+  },
+  "emotion_by_category": {
+    "saludo": "neutral",
+    "cierre": "neutral",
+    "malestar": "malestar",
+    "tristeza": "tristeza",
+    "ansiedad": "ansiedad",
+    "cansancio": "cansancio",
+    "frustracion": "frustracion",
+    "confusion": "confusion",
+    "red_apoyo": "soledad",
+    "vinculo_bebe": "vinculo",
+    "identidad_materna": "culpa",
+    "ambivalencia_embarazo": "confusion",
+    "ambivalencia_followup": "confusion",
+    "sintoma_fisico": "malestar",
+    "riesgo_medio": "malestar",
+    "riesgo_alto": "desesperanza",
+    "desconocido": "neutral",
+    "respuesta_corta": "neutral",
+    "pedir_mas_informacion": "neutral",
+    "pregunta_por_que": "neutral",
+    "multitema_tristeza_ansiedad": "ansiedad",
+    "multitema_sintoma_ansiedad": "ansiedad",
+    "multitema_ambivalencia_sintoma_ansiedad": "confusion"
+  },
+  "intensity_by_category": {
+    "saludo": "baja",
+    "cierre": "baja",
+    "desconocido": "baja",
+    "respuesta_corta": "baja",
+    "pedir_mas_informacion": "media",
+    "pregunta_por_que": "media",
+    "malestar": "media",
+    "tristeza": "media",
+    "ansiedad": "media",
+    "cansancio": "media",
+    "frustracion": "media",
+    "confusion": "media",
+    "red_apoyo": "media",
+    "vinculo_bebe": "media",
+    "identidad_materna": "media",
+    "ambivalencia_embarazo": "alta",
+    "ambivalencia_followup": "alta",
+    "sintoma_fisico": "alta",
+    "riesgo_medio": "alta",
+    "riesgo_alto": "alta",
+    "multitema_tristeza_ansiedad": "media",
+    "multitema_sintoma_ansiedad": "alta",
+    "multitema_ambivalencia_sintoma_ansiedad": "alta"
+  },
+  "structured_responses": {
+    "multitema_ambivalencia_sintoma_ansiedad": {
+      "module": "orientacion_salud",
+      "families": {
+        "integracion_sensible": [
+          {
+            "id": "multi_amb_sint_ans_001",
+            "text": "Te leo con mucho cuidado. Estás hablando de varias cosas importantes al mismo tiempo: un malestar físico, ansiedad y una duda sensible sobre tu embarazo. Primero cuidemos lo más urgente: si el síntoma físico continúa, empeora, hay dolor fuerte, fiebre, sangrado, debilidad o no puedes retener líquidos, es importante buscar orientación de salud cuanto antes. También podemos mirar con calma lo emocional. ¿Qué se siente más urgente ahora: el cuerpo, la ansiedad o esa duda?",
+            "question": "¿Qué se siente más urgente ahora: el cuerpo, la ansiedad o esa duda?"
+          },
+          {
+            "id": "multi_amb_sint_ans_002",
+            "text": "Gracias por confiar algo tan delicado. Cuando el cuerpo se siente mal y además aparece ansiedad, las dudas pueden sentirse mucho más grandes. No voy a juzgarte ni decirte qué decidir. Si el síntoma físico sigue o se vuelve fuerte, busca apoyo de salud. ¿Qué parte está pesando más en este momento?",
+            "question": "¿Qué parte está pesando más en este momento?"
+          },
+          {
+            "id": "multi_amb_sint_ans_003",
+            "text": "Lo que dices tiene varias capas: tu cuerpo está pasando por un síntoma, tu mente está con ansiedad y también aparece una pregunta difícil sobre el embarazo. No tienes que resolverlo todo ahora. Si hay sangrado, dolor fuerte, fiebre, debilidad o vómito persistente, lo más seguro es consultar con salud. ¿Quieres empezar por lo que pasa en tu cuerpo o por lo que sientes emocionalmente?",
+            "question": "¿Quieres empezar por lo que pasa en tu cuerpo o por lo que sientes emocionalmente?"
+          }
+        ]
+      }
+    },
+    "multitema_sintoma_ansiedad": {
+      "module": "orientacion_salud",
+      "families": {
+        "cuerpo_emocion": [
+          {
+            "id": "multi_sint_ans_001",
+            "text": "Te leo. Parece que el malestar físico y la ansiedad están apareciendo juntos, y eso puede sentirse muy agotador. Si el síntoma continúa, se vuelve intenso o aparece con dolor fuerte, fiebre, sangrado, debilidad o dificultad para retener líquidos, es importante buscar orientación de salud. Emocionalmente, ¿qué te asusta más de lo que estás sintiendo?",
+            "question": "¿Qué te asusta más de lo que estás sintiendo?"
+          },
+          {
+            "id": "multi_sint_ans_002",
+            "text": "Debe ser difícil sentir el cuerpo incómodo y al mismo tiempo tener ansiedad. Podemos mirar ambas cosas con calma, pero sin ignorar lo físico: si el síntoma sigue o empeora, busca apoyo de salud. ¿Sientes que la ansiedad aparece por el síntoma físico o que el síntoma aumenta cuando estás ansiosa?",
+            "question": "¿Sientes que la ansiedad aparece por el síntoma físico o que el síntoma aumenta cuando estás ansiosa?"
+          },
+          {
+            "id": "multi_sint_ans_003",
+            "text": "Cuando el cuerpo se siente mal, la mente puede empezar a imaginar muchas cosas. No quiero minimizar ninguna de las dos partes. Lo físico merece revisión si continúa o se intensifica, y lo emocional merece ser escuchado con calma. ¿Qué necesitas atender primero ahora?",
+            "question": "¿Qué necesitas atender primero ahora?"
+          }
+        ]
+      }
+    },
+    "multitema_tristeza_ansiedad": {
+      "module": "estado_emocional",
+      "families": {
+        "emociones_mezcladas": [
+          {
+            "id": "multi_trist_ans_001",
+            "text": "Siento que estás cargando tristeza y ansiedad al mismo tiempo. A veces una parte quiere llorar y otra parte no puede dejar de pensar. Podemos ir despacio. ¿Cuál de las dos está ocupando más espacio ahora?",
+            "question": "¿Cuál de las dos está ocupando más espacio ahora?"
+          },
+          {
+            "id": "multi_trist_ans_002",
+            "text": "Gracias por decirlo. Cuando la tristeza y la ansiedad aparecen juntas, puede sentirse como si todo pesara y corriera al mismo tiempo. No tenemos que resolver todo ahora. ¿La tristeza viene más de algo que pasó o la ansiedad de algo que temes que pase?",
+            "question": "¿La tristeza viene más de algo que pasó o la ansiedad de algo que temes que pase?"
+          },
+          {
+            "id": "multi_trist_ans_003",
+            "text": "Te leo con cuidado. Tristeza y ansiedad juntas pueden dejarte muy cansada por dentro. Podemos separar una cosa de la otra para que no se sienta tan grande. ¿Qué aparece primero: las ganas de llorar o los pensamientos repetidos?",
+            "question": "¿Qué aparece primero: las ganas de llorar o los pensamientos repetidos?"
+          }
+        ]
+      }
+    },
+    "saludo": {
+      "module": "bienvenida",
+      "families": {
+        "inicio": [
+          {
+            "id": "saludo_001",
+            "text": "Hola{name}. Soy GestarBien. Estoy aquí para acompañarte con calma. Puedes contarme qué está pasando hoy.",
+            "question": "Puedes contarme qué está pasando hoy."
+          },
+          {
+            "id": "saludo_002",
+            "text": "Hola{name}. Gracias por estar aquí. Podemos ir paso a paso. ¿Cómo llegas hoy a este espacio?",
+            "question": "¿Cómo llegas hoy a este espacio?"
+          },
+          {
+            "id": "saludo_003",
+            "text": "Hola{name}. Claro, podemos hablar un rato. Este es un espacio para escucharte sin juzgarte. ¿Qué te gustaría contarme primero?",
+            "question": "¿Qué te gustaría contarme primero?"
+          },
+          {
+            "id": "saludo_004",
+            "text": "Hola{name}. No tienes que tener las palabras perfectas para empezar. Puedes contarme una emoción, una preocupación o algo que esté pesando hoy.",
+            "question": "Puedes contarme una emoción, una preocupación o algo que esté pesando hoy."
+          }
+        ]
+      }
+    },
+    "cierre": {
+      "module": "cierre",
+      "families": {
+        "cierre_suave": [
+          {
+            "id": "cierre_001",
+            "text": "Gracias por compartir este momento conmigo. Podemos dejar la conversación aquí por ahora. Cuando quieras volver, estaré aquí para acompañarte con calma.",
+            "question": null
+          },
+          {
+            "id": "cierre_002",
+            "text": "Está bien, cerramos por ahora. Gracias por confiar en este espacio. Lo que compartiste importa.",
+            "question": null
+          },
+          {
+            "id": "cierre_003",
+            "text": "De acuerdo. Cerramos con calma. Cuando quieras, podemos retomar desde donde lo dejaste.",
+            "question": null
+          },
+          {
+            "id": "cierre_004",
+            "text": "Gracias por darte este espacio. Puedes volver cuando lo necesites; no tienes que tener todo resuelto para seguir hablando.",
+            "question": null
+          }
+        ]
+      }
+    },
+    "malestar": {
+      "module": "estado_emocional",
+      "families": {
+        "validacion_exploracion": [
+          {
+            "id": "malestar_001",
+            "text": "Gracias por decirlo. Cuando dices que te sientes mal, pueden estar pasando muchas cosas al mismo tiempo: cansancio, tristeza, miedo, presión o malestar físico. Podemos ir por partes. ¿Ese malestar se siente más en tu cuerpo, en tus pensamientos o en tus emociones?",
+            "question": "¿Ese malestar se siente más en tu cuerpo, en tus pensamientos o en tus emociones?"
+          },
+          {
+            "id": "malestar_002",
+            "text": "Siento que hoy no está siendo fácil para ti. No tienes que encontrar las palabras perfectas. Podemos empezar con algo simple. ¿Te sientes más cansada, triste, preocupada, confundida o sobrepasada?",
+            "question": "¿Te sientes más cansada, triste, preocupada, confundida o sobrepasada?"
+          },
+          {
+            "id": "malestar_003",
+            "text": "Te leo. A veces decir 'me siento mal' es la forma más honesta de empezar. Vamos despacio. ¿Qué fue lo primero que notaste hoy: ganas de llorar, ansiedad, cansancio, dolor o pensamientos difíciles?",
+            "question": "¿Qué fue lo primero que notaste hoy?"
+          }
+        ],
+        "alta_intensidad": [
+          {
+            "id": "malestar_alto_001",
+            "text": "Siento mucho que se esté sintiendo tan pesado. No tienes que ordenar todo ahora ni explicar perfecto lo que pasa. Podemos quedarnos solo con este momento y buscar una parte pequeña para acompañar. ¿Estás sola ahora o hay alguien cerca de ti?",
+            "question": "¿Estás sola ahora o hay alguien cerca de ti?"
+          },
+          {
+            "id": "malestar_alto_002",
+            "text": "Te leo con mucho cuidado. Cuando el malestar se siente tan fuerte, no hace falta resolver toda la historia de una vez. Lo importante ahora es que no tengas que cargarlo completamente sola. ¿Hay alguien con quien puedas hablar en este momento?",
+            "question": "¿Hay alguien con quien puedas hablar en este momento?"
+          }
+        ],
+        "externalizacion": [
+          {
+            "id": "malestar_004",
+            "text": "Podemos mirar ese malestar como algo que llegó a incomodarte, no como algo que te define. Si ese malestar tuviera una forma, un peso o un nombre, ¿cómo lo describirías?",
+            "question": "Si ese malestar tuviera una forma, un peso o un nombre, ¿cómo lo describirías?"
+          },
+          {
+            "id": "malestar_005",
+            "text": "No eres tú el problema. Podemos mirar ese malestar como algo que está apareciendo en tu historia en este momento. ¿Cuándo notas que aparece con más fuerza?",
+            "question": "¿Cuándo notas que aparece con más fuerza?"
+          }
+        ],
+        "recurso": [
+          {
+            "id": "malestar_006",
+            "text": "Ese malestar merece cuidado. Antes de intentar resolverlo todo, podemos buscar una parte pequeña que te haya ayudado antes. ¿Hay algo, aunque sea mínimo, que te haya dado un poco de calma en otros momentos?",
+            "question": "¿Hay algo que te haya dado un poco de calma en otros momentos?"
+          }
+        ]
+      }
+    },
+    "tristeza": {
+      "module": "estado_emocional",
+      "families": {
+        "validacion_exploracion": [
+          {
+            "id": "tristeza_001",
+            "text": "Siento mucho que hoy estés así. La tristeza puede hacer que todo se sienta más pesado, incluso las cosas pequeñas. No tienes que esconderla para parecer fuerte. ¿Qué fue lo que más te dolió hoy?",
+            "question": "¿Qué fue lo que más te dolió hoy?"
+          },
+          {
+            "id": "tristeza_002",
+            "text": "Te leo con mucha delicadeza. Sentirte triste no significa que estés fallando. Podemos darle un poco de espacio a esa tristeza sin pelear con ella. ¿Qué necesitaría escuchar esa parte triste de ti?",
+            "question": "¿Qué necesitaría escuchar esa parte triste de ti?"
+          },
+          {
+            "id": "tristeza_003",
+            "text": "Gracias por decírmelo. Que te sientas triste no significa que estés haciendo algo mal. A veces el cuerpo, la mente y las emociones se saturan. ¿Qué es lo que más te está pesando ahora?",
+            "question": "¿Qué es lo que más te está pesando ahora?"
+          }
+        ],
+        "externalizacion": [
+          {
+            "id": "tristeza_004",
+            "text": "Podemos mirar esta tristeza como algo que está visitándote, no como algo que eres tú. Si esta tristeza tuviera un nombre, ¿cómo la llamarías?",
+            "question": "Si esta tristeza tuviera un nombre, ¿cómo la llamarías?"
+          },
+          {
+            "id": "tristeza_005",
+            "text": "Esa tristeza parece estar ocupando bastante espacio hoy. Para separarla un poco de ti, podríamos preguntarle cuándo aparece. ¿En qué momentos notas que llega con más fuerza?",
+            "question": "¿En qué momentos notas que llega con más fuerza?"
+          }
+        ],
+        "excepcion": [
+          {
+            "id": "tristeza_006",
+            "text": "Aunque la tristeza esté fuerte, a veces hay momentos pequeños en los que pierde un poquito de fuerza. ¿Has notado algún momento del día en el que se sienta menos pesada?",
+            "question": "¿Has notado algún momento del día en el que se sienta menos pesada?"
+          }
+        ],
+        "red_apoyo": [
+          {
+            "id": "tristeza_007",
+            "text": "No tienes que cargar esta tristeza sola. A veces ayuda que alguien solo escuche sin intentar resolverlo todo. ¿Hay alguien con quien puedas hablar hoy, aunque sea un poco?",
+            "question": "¿Hay alguien con quien puedas hablar hoy?"
+          }
+        ]
+      }
+    },
+    "ansiedad": {
+      "module": "externalizacion",
+      "families": {
+        "validacion_exploracion": [
+          {
+            "id": "ansiedad_001",
+            "text": "Te leo. Esa ansiedad parece estar haciendo mucho ruido por dentro. No tenemos que resolver todo ahora. ¿Qué pensamiento es el que más se repite?",
+            "question": "¿Qué pensamiento es el que más se repite?"
+          },
+          {
+            "id": "ansiedad_002",
+            "text": "Gracias por decirlo. La ansiedad puede hacer que todo se sienta más urgente o más grande de lo que puedes cargar. Podemos bajarle velocidad. ¿Qué pensamiento se repite más cuando aparece?",
+            "question": "¿Qué pensamiento se repite más cuando aparece?"
+          },
+          {
+            "id": "ansiedad_003",
+            "text": "Vamos a bajar un poquito la velocidad. La ansiedad puede sentirse como una alarma encendida por dentro. ¿La ansiedad se siente más en tu cuerpo o en tus pensamientos?",
+            "question": "¿La ansiedad se siente más en tu cuerpo o en tus pensamientos?"
+          }
+        ],
+        "externalizacion": [
+          {
+            "id": "ansiedad_004",
+            "text": "No eres tú el problema; podemos mirar esa ansiedad como algo que llegó a incomodarte. Si esa ansiedad tuviera una voz, ¿qué crees que te estaría diciendo?",
+            "question": "Si esa ansiedad tuviera una voz, ¿qué crees que te estaría diciendo?"
+          },
+          {
+            "id": "ansiedad_005",
+            "text": "Podemos intentar separar un poco a la ansiedad de ti. ¿En qué momentos aparece con más fuerza: cuando piensas en tu bebé, en el parto, en tu cuerpo, en tu familia o en el futuro?",
+            "question": "¿En qué momentos aparece con más fuerza?"
+          }
+        ],
+        "recurso": [
+          {
+            "id": "ansiedad_006",
+            "text": "Cuando la ansiedad aparece, a veces intenta convencerte de que todo es urgente. Podemos buscar una pequeña pausa. ¿Qué te ha ayudado antes, aunque sea un poquito, cuando te sientes así?",
+            "question": "¿Qué te ha ayudado antes cuando te sientes así?"
+          }
+        ]
+      }
+    },
+    "cansancio": {
+      "module": "estado_emocional",
+      "families": {
+        "validacion_exploracion": [
+          {
+            "id": "cansancio_001",
+            "text": "Ese cansancio suena fuerte. A veces no es solo físico; también puede venir de sostener muchas cosas por dentro. No tienes que poder con todo hoy. ¿Ese cansancio se siente más físico, emocional o de ambas formas?",
+            "question": "¿Ese cansancio se siente más físico, emocional o de ambas formas?"
+          },
+          {
+            "id": "cansancio_002",
+            "text": "Te leo con cuidado. Sentirte agotada no significa que estés fallando; puede ser una señal de que necesitas pausa, apoyo o descanso. ¿Qué parte de este cansancio pesa más ahora?",
+            "question": "¿Qué parte de este cansancio pesa más ahora?"
+          },
+          {
+            "id": "cansancio_003",
+            "text": "Siento que hoy tu cuerpo y tu mente están muy cargados. No hace falta que tengas fuerza para todo en este momento. ¿Hay algo pequeño que puedas soltar por ahora?",
+            "question": "¿Hay algo pequeño que puedas soltar por ahora?"
+          }
+        ],
+        "cuidado": [
+          {
+            "id": "cansancio_004",
+            "text": "Ese agotamiento merece cuidado, no exigencia. Podemos mirar qué parte de tu día está consumiendo más energía. ¿El cansancio viene más del cuerpo, de la mente o de sentir que tienes que sostener demasiado?",
+            "question": "¿El cansancio viene más del cuerpo, de la mente o de sentir que tienes que sostener demasiado?"
+          },
+          {
+            "id": "cansancio_005",
+            "text": "A veces el cansancio aparece cuando llevas mucho tiempo intentando seguir como si nada pasara. No tienes que exigirte estar bien todo el tiempo. ¿Qué necesitarías para sentir un poco menos de carga hoy?",
+            "question": "¿Qué necesitarías para sentir un poco menos de carga hoy?"
+          }
+        ]
+      }
+    },
+    "frustracion": {
+      "module": "estado_emocional",
+      "families": {
+        "validacion_exploracion": [
+          {
+            "id": "frustracion_001",
+            "text": "Eso suena muy cargado. La frustración muchas veces aparece cuando una ha sostenido demasiado por mucho tiempo. ¿Qué sientes que ya no quieres seguir cargando?",
+            "question": "¿Qué sientes que ya no quieres seguir cargando?"
+          },
+          {
+            "id": "frustracion_002",
+            "text": "Te leo, y parece que vienes acumulando presión. No tienes que ser paciente con todo el mundo todo el tiempo. ¿Qué límite te gustaría poder poner, aunque sea pequeño?",
+            "question": "¿Qué límite te gustaría poder poner, aunque sea pequeño?"
+          },
+          {
+            "id": "frustracion_003",
+            "text": "Esa frustración merece ser escuchada. Tal vez está mostrando una necesidad que no ha tenido suficiente espacio. ¿Qué fue lo que más te frustró hoy?",
+            "question": "¿Qué fue lo que más te frustró hoy?"
+          }
+        ],
+        "externalizacion": [
+          {
+            "id": "frustracion_004",
+            "text": "Podemos mirar esta frustración como algo que está empujando muy fuerte hoy. Si esa frustración pudiera hablar, ¿qué crees que estaría reclamando o pidiendo?",
+            "question": "Si esa frustración pudiera hablar, ¿qué crees que estaría reclamando o pidiendo?"
+          }
+        ],
+        "recurso": [
+          {
+            "id": "frustracion_005",
+            "text": "No tienes que poder con todo al mismo tiempo. Pensemos en algo pequeño y posible. ¿Qué te gustaría que fuera diferente en este momento, aunque fuera una sola cosa?",
+            "question": "¿Qué te gustaría que fuera diferente en este momento?"
+          }
+        ]
+      }
+    },
+    "confusion": {
+      "module": "estado_emocional",
+      "families": {
+        "validacion_exploracion": [
+          {
+            "id": "confusion_001",
+            "text": "Vamos despacio. Cuando todo se mezcla, decidir puede sentirse imposible. No tienes que resolverlo todo en este instante. ¿Qué parte se siente más difícil de ordenar?",
+            "question": "¿Qué parte se siente más difícil de ordenar?"
+          },
+          {
+            "id": "confusion_002",
+            "text": "La confusión no significa que estés haciendo algo mal. A veces lo primero no es decidir, sino entender qué está pesando más. ¿Qué pregunta es la que más vueltas te está dando?",
+            "question": "¿Qué pregunta es la que más vueltas te está dando?"
+          },
+          {
+            "id": "confusion_003",
+            "text": "Podemos mirar una parte a la vez. Cuando hay muchas voces alrededor, tu propia voz puede sentirse bajita. ¿Sientes que esta confusión viene más de ti o de lo que otras personas esperan?",
+            "question": "¿Sientes que esta confusión viene más de ti o de lo que otras personas esperan?"
+          }
+        ],
+        "externalizacion": [
+          {
+            "id": "confusion_004",
+            "text": "Podemos mirar esa confusión como una niebla que está dificultando ver con claridad. Si esa niebla tuviera un mensaje, ¿qué crees que intentaría mostrarte?",
+            "question": "Si esa niebla tuviera un mensaje, ¿qué crees que intentaría mostrarte?"
+          }
+        ],
+        "recurso": [
+          {
+            "id": "confusion_005",
+            "text": "Cuando hay muchas cosas mezcladas, no tenemos que resolverlas todas. Podemos escoger una sola. ¿Qué parte quisieras entender primero: lo que sientes, lo que piensas o lo que necesitas?",
+            "question": "¿Qué parte quisieras entender primero?"
+          }
+        ]
+      }
+    },
+    "ambivalencia_embarazo": {
+      "module": "exploracion_segura",
+      "families": {
+        "validacion_sin_juicio": [
+          {
+            "id": "ambivalencia_001",
+            "text": "No eres mala por pensar o sentir esto. Gracias por decir algo tan difícil en voz alta. No voy a decirte qué decidir ni a juzgarte; podemos mirar con calma qué está pesando detrás de esa duda. ¿Esto aparece más cuando estás sola, cansada o presionada?",
+            "question": "¿Esto aparece más cuando estás sola, cansada o presionada?"
+          },
+          {
+            "id": "ambivalencia_002",
+            "text": "Gracias por confiar algo tan difícil. Una duda así merece cuidado, no juicio ni presión. No tienes que responderte todo ahora mismo; podemos empezar por entender qué parte de esta situación está doliendo más. ¿Qué crees que pesa más hoy: miedo, cansancio, presión o soledad?",
+            "question": "¿Qué crees que pesa más hoy: miedo, cansancio, presión o soledad?"
+          },
+          {
+            "id": "ambivalencia_003",
+            "text": "Te leo con mucho cuidado. No voy a decirte qué sentir ni qué decidir. Lo importante es que no tengas que atravesar esta pregunta sola ni en silencio. ¿Hay alguien seguro con quien puedas hablar de esto sin sentirte juzgada?",
+            "question": "¿Hay alguien seguro con quien puedas hablar de esto sin sentirte juzgada?"
+          },
+          {
+            "id": "ambivalencia_004",
+            "text": "Esto merece calma, no presión. Pensar o decir esto no te hace mala persona. Podemos mirar esta duda sin convertirla todavía en una decisión. ¿Qué necesitarías recibir hoy para no sentirte tan sola con esto?",
+            "question": "¿Qué necesitarías recibir hoy para no sentirte tan sola con esto?"
+          }
+        ],
+        "profundizacion": [
+          {
+            "id": "ambivalencia_005",
+            "text": "Podemos quedarnos en esto un poco más. Una duda así no significa que estés fallando; puede estar hablando de miedo, cansancio, presión o necesidad de apoyo. ¿Cuál de esas partes se parece más a lo que estás viviendo?",
+            "question": "¿Cuál de esas partes se parece más a lo que estás viviendo?"
+          },
+          {
+            "id": "ambivalencia_006",
+            "text": "A veces la duda no está diciendo necesariamente una decisión; puede estar diciendo 'necesito apoyo', 'necesito descanso' o 'necesito sentirme segura'. ¿Cuál de esas necesidades se parece más a lo que estás viviendo?",
+            "question": "¿Cuál de esas necesidades se parece más a lo que estás viviendo?"
+          }
+        ]
+      }
+    },
+    "ambivalencia_followup": {
+      "module": "exploracion_segura",
+      "families": {
+        "profundizacion": [
+          {
+            "id": "ambivalencia_followup_001",
+            "text": "Podemos quedarnos en esto un poco más. Cuando una duda así aparece, no significa que seas mala ni que estés fallando; puede estar hablando de miedo, cansancio, presión o necesidad de apoyo. ¿Cuál de esas partes se parece más a lo que estás viviendo?",
+            "question": "¿Cuál de esas partes se parece más a lo que estás viviendo?"
+          },
+          {
+            "id": "ambivalencia_followup_002",
+            "text": "Tiene sentido que quieras entenderlo mejor. Una pregunta así no se responde corriendo. Podemos mirar qué la alimenta. ¿Aparece más cuando te sientes sola, cuando estás cansada, cuando piensas en el futuro o cuando sientes presión de alguien?",
+            "question": "¿Aparece más cuando te sientes sola, cuando estás cansada, cuando piensas en el futuro o cuando sientes presión de alguien?"
+          },
+          {
+            "id": "ambivalencia_followup_003",
+            "text": "A veces la duda no está diciendo necesariamente una decisión; puede estar diciendo 'necesito apoyo', 'necesito descanso' o 'necesito sentirme segura'. ¿Cuál de esas necesidades se parece más a lo que estás viviendo?",
+            "question": "¿Cuál de esas necesidades se parece más a lo que estás viviendo?"
+          }
+        ]
+      }
+    },
+    "sintoma_fisico": {
+      "module": "orientacion_salud",
+      "families": {
+        "orientacion_salud": [
+          {
+            "id": "sintoma_001",
+            "text": "Siento que estés pasando por ese malestar físico. Si esto continúa, empeora, te impide retener líquidos o viene con debilidad, dolor fuerte, fiebre o sangrado, es importante buscar orientación de salud cuanto antes. ¿Hay alguien que pueda acompañarte?",
+            "question": "¿Hay alguien que pueda acompañarte?"
+          },
+          {
+            "id": "sintoma_002",
+            "text": "Eso que cuentas también necesita cuidado físico, no solo emocional. Si el síntoma es fuerte, se repite o aparece junto con dolor, fiebre, sangrado o debilidad, lo más seguro es consultar con un profesional de salud. ¿Hay alguien que pueda acompañarte o ayudarte a consultar?",
+            "question": "¿Hay alguien que pueda acompañarte o ayudarte a consultar?"
+          },
+          {
+            "id": "sintoma_003",
+            "text": "Gracias por contarlo. Para cuidar tu bienestar, si el vómito, dolor, fiebre, sangrado o debilidad continúa o se intensifica, sería importante buscar atención médica. ¿Te sientes acompañada o hay alguien que pueda ayudarte a consultar?",
+            "question": "¿Te sientes acompañada o hay alguien que pueda ayudarte a consultar?"
+          },
+          {
+            "id": "sintoma_004",
+            "text": "Te leo con cuidado. Cuando aparece un síntoma físico fuerte o repetido, es importante no quedarse solo con la preocupación. Busca orientación de salud, especialmente si hay dolor fuerte, fiebre, sangrado, debilidad o no puedes retener líquidos. ¿Puedes pedir ayuda para consultar?",
+            "question": "¿Puedes pedir ayuda para consultar?"
+          }
+        ]
+      }
+    },
+    "red_apoyo": {
+      "module": "redes_apoyo",
+      "families": {
+        "exploracion_red": [
+          {
+            "id": "red_001",
+            "text": "Sentirse sola en esto puede doler mucho. A veces no se necesita que alguien resuelva todo, sino que escuche sin juzgar. ¿Hay alguien con quien puedas hablar hoy?",
+            "question": "¿Hay alguien con quien puedas hablar hoy?"
+          },
+          {
+            "id": "red_002",
+            "text": "No mereces sentir que todo esto te toca cargarlo sola. Podemos pensar en alguien o en un espacio donde no tengas que fingir que todo está bien. ¿Quién podría estar un poco más cerca de ti hoy?",
+            "question": "¿Quién podría estar un poco más cerca de ti hoy?"
+          },
+          {
+            "id": "red_003",
+            "text": "Cuando las personas cercanas no entienden, una puede sentirse todavía más cansada. Lo que necesitas también importa. ¿Qué tipo de apoyo estás necesitando más: que te escuchen, que te ayuden o que te den espacio?",
+            "question": "¿Qué tipo de apoyo estás necesitando más: que te escuchen, que te ayuden o que te den espacio?"
+          },
+          {
+            "id": "red_004",
+            "text": "La falta de apoyo puede hacer que todo pese más. No todo el mundo sabe acompañar, pero eso no significa que debas quedarte sola. ¿Hay alguien a quien puedas escribirle algo sencillo como: necesito compañía?",
+            "question": "¿Hay alguien a quien puedas escribirle algo sencillo como: necesito compañía?"
+          }
+        ]
+      }
+    },
+    "vinculo_bebe": {
+      "module": "conversaciones_bebe",
+      "families": {
+        "vinculo_sin_forzar": [
+          {
+            "id": "vinculo_001",
+            "text": "Que te cueste conectar no te hace mala mamá ni mala persona. A veces el vínculo necesita tiempo, calma y menos presión. ¿Qué emoción aparece cuando piensas en acercarte a tu bebé?",
+            "question": "¿Qué emoción aparece cuando piensas en acercarte a tu bebé?"
+          },
+          {
+            "id": "vinculo_002",
+            "text": "No todas las personas viven el vínculo con el bebé de la misma manera ni al mismo ritmo. Podemos mirarlo sin forzarte a sentir algo perfecto. ¿Qué sientes cuando piensas en hablarle?",
+            "question": "¿Qué sientes cuando piensas en hablarle?"
+          },
+          {
+            "id": "vinculo_003",
+            "text": "Podemos hablar de ese vínculo con mucho cuidado. Si ahora aparece miedo, distancia o confusión, no tienes que juzgarte por eso. ¿Qué crees que está haciendo más difícil acercarte?",
+            "question": "¿Qué crees que está haciendo más difícil acercarte?"
+          },
+          {
+            "id": "vinculo_004",
+            "text": "El vínculo también puede construirse poco a poco. No tiene que sentirse perfecto ni inmediato. Podemos empezar con algo muy pequeño y sin presión. ¿Qué te gustaría poder decirle hoy, aunque sea en una frase sencilla?",
+            "question": "¿Qué te gustaría poder decirle hoy, aunque sea en una frase sencilla?"
+          }
+        ]
+      }
+    },
+    "identidad_materna": {
+      "module": "identidad_preferida",
+      "families": {
+        "identidad_preferida": [
+          {
+            "id": "identidad_001",
+            "text": "No eres mala por tener miedo, dudas o culpa. Sentir que podrías fallar no significa que estés fallando; puede mostrar que esto te importa y que estás cargando mucha exigencia. ¿Qué idea de ser mamá te está pesando más?",
+            "question": "¿Qué idea de ser mamá te está pesando más?"
+          },
+          {
+            "id": "identidad_002",
+            "text": "Tu valor no depende de vivir esta etapa de forma perfecta. También eres una persona con cansancio, historia, miedos y necesidades. ¿Qué parte de ti necesita más cuidado en este momento?",
+            "question": "¿Qué parte de ti necesita más cuidado en este momento?"
+          },
+          {
+            "id": "identidad_003",
+            "text": "No tienes que sentirte feliz todo el tiempo para que tu experiencia sea válida. La maternidad también puede mover preguntas difíciles. ¿De dónde crees que viene esa exigencia que estás sintiendo?",
+            "question": "¿De dónde crees que viene esa exigencia que estás sintiendo?"
+          },
+          {
+            "id": "identidad_004",
+            "text": "Te leo con cuidado. La culpa puede hacer que una se mida con una versión imposible de maternidad. No tienes que convertirte en una mamá perfecta para merecer cuidado. ¿Qué te estás exigiendo demasiado hoy?",
+            "question": "¿Qué te estás exigiendo demasiado hoy?"
+          }
+        ]
+      }
+    },
+    "pedir_mas_informacion": {
+      "module": "estado_emocional",
+      "families": {
+        "profundizacion": [
+          {
+            "id": "mas_info_001",
+            "text": "Claro. Podemos mirar esto con más calma. Lo importante es no juzgar lo que sientes de inmediato. A veces una emoción difícil está mostrando miedo, cansancio, presión o necesidad de apoyo. ¿Cuál de esas cosas se parece más a lo que estás viviendo?",
+            "question": "¿Cuál de esas cosas se parece más a lo que estás viviendo?"
+          },
+          {
+            "id": "mas_info_002",
+            "text": "Sí, puedo acompañarte un poco más. Para entenderlo mejor, podemos mirar tres partes: lo que sientes en el cuerpo, lo que piensas y lo que necesitas. ¿Por cuál quieres empezar?",
+            "question": "¿Por cuál quieres empezar?"
+          }
+        ]
+      }
+    },
+    "pregunta_por_que": {
+      "module": "estado_emocional",
+      "families": {
+        "explicacion_suave": [
+          {
+            "id": "porque_001",
+            "text": "Porque lo que estás sintiendo parece importante y no debería tratarse como una respuesta rápida. A veces una emoción fuerte aparece para mostrar que algo necesita cuidado, descanso, apoyo o ser escuchado. ¿Qué crees que necesita más atención ahora?",
+            "question": "¿Qué crees que necesita más atención ahora?"
+          },
+          {
+            "id": "porque_002",
+            "text": "Porque cuando algo se siente tan pesado, ir despacio ayuda a entenderlo mejor sin juzgarte. No se trata de obligarte a sentir algo distinto, sino de escuchar qué está pasando. ¿Qué parte de esto te cuesta más explicar?",
+            "question": "¿Qué parte de esto te cuesta más explicar?"
+          }
+        ]
+      }
+    },
+    "respuesta_corta": {
+      "module": "estado_emocional",
+      "families": {
+        "ayuda_para_responder": [
+          {
+            "id": "corta_001",
+            "text": "Está bien responder así. A veces no hay palabras claras. Podemos empezar por algo pequeño: ¿eso que sientes se parece más a tristeza, miedo, cansancio o confusión?",
+            "question": "¿Eso que sientes se parece más a tristeza, miedo, cansancio o confusión?"
+          },
+          {
+            "id": "corta_002",
+            "text": "No tienes que explicarlo perfecto. Con una palabra basta para empezar. ¿Qué emoción está más cerca de lo que sientes ahora?",
+            "question": "¿Qué emoción está más cerca de lo que sientes ahora?"
+          }
+        ]
+      }
+    },
+    "riesgo_medio": {
+      "module": "seguridad",
+      "families": {
+        "seguridad": [
+          {
+            "id": "riesgo_medio_001",
+            "text": "Siento que esto se está volviendo demasiado pesado para cargarlo sola. Este espacio puede acompañarte, pero también sería importante que hoy puedas hablar con alguien de confianza o con un profesional de salud. ¿Hay alguien cercano a quien puedas escribirle ahora?",
+            "question": "¿Hay alguien cercano a quien puedas escribirle ahora?"
+          },
+          {
+            "id": "riesgo_medio_002",
+            "text": "No quiero que te quedes sola con esto. Podemos seguir hablando, pero también sería bueno sumar apoyo humano hoy: alguien que pueda escucharte o estar pendiente de ti. ¿Estás acompañada en este momento?",
+            "question": "¿Estás acompañada en este momento?"
+          },
+          {
+            "id": "riesgo_medio_003",
+            "text": "Lo que estás sintiendo necesita cuidado. Si hoy sientes que ya no puedes con todo, sería importante que una persona de confianza sepa que no estás bien. ¿A quién podrías buscar ahora?",
+            "question": "¿A quién podrías buscar ahora?"
+          }
+        ]
+      }
+    },
+    "riesgo_alto": {
+      "module": "seguridad",
+      "families": {
+        "seguridad": [
+          {
+            "id": "riesgo_alto_001",
+            "text": "Siento mucho que estés pasando por un momento tan doloroso. Me importa tu seguridad. Por favor, no te quedes sola con esto ahora: busca a una persona de confianza que pueda acompañarte y contacta los servicios de emergencia de tu país o acude al centro de salud más cercano. ¿Estás acompañada en este momento?",
+            "question": "¿Estás acompañada en este momento?"
+          },
+          {
+            "id": "riesgo_alto_002",
+            "text": "Gracias por decirlo. No quiero que atravieses esto sola. Este espacio puede acompañarte, pero ahora lo más importante es tu seguridad: busca ayuda inmediata con una persona cercana, servicios de emergencia o un centro de salud. ¿Hay alguien cerca de ti ahora?",
+            "question": "¿Hay alguien cerca de ti ahora?"
+          },
+          {
+            "id": "riesgo_alto_003",
+            "text": "Lo que dices merece atención inmediata y compañía real. Por favor, busca a alguien de confianza que pueda estar contigo ahora y contacta un servicio de emergencia o un centro de salud. ¿Puedes pedirle a alguien que te acompañe?",
+            "question": "¿Puedes pedirle a alguien que te acompañe?"
+          }
+        ]
+      }
+    },
+    "desconocido": {
+      "module": "estado_emocional",
+      "families": {
+        "clarificacion": [
+          {
+            "id": "desconocido_001",
+            "text": "Te leo. Podemos ir paso a paso. ¿Qué parte de todo esto se siente más presente ahora?",
+            "question": "¿Qué parte de todo esto se siente más presente ahora?"
+          },
+          {
+            "id": "desconocido_002",
+            "text": "No tienes que explicarlo perfecto. Puedes empezar con una emoción, una preocupación o algo que haya pasado hoy.",
+            "question": "Puedes empezar con una emoción, una preocupación o algo que haya pasado hoy."
+          },
+          {
+            "id": "desconocido_003",
+            "text": "A veces empezar cuesta. Puedes decirme solo una palabra: ¿miedo, tristeza, cansancio, confusión, rabia o preocupación?",
+            "question": "¿Miedo, tristeza, cansancio, confusión, rabia o preocupación?"
+          }
+        ]
+      }
+    }
+  }
+}
